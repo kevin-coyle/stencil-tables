@@ -63,4 +63,4 @@ However, when using custom elements you'll get something like this:
 
 This isn't desirable because table elements are expected to have child elements of a specific type. Not conforming with the expected structure has effects on accessibility and layout.
 
-Therefore, we just use the child elements as wrappers that render nothing more than a slot. We then take what is slotted and insert it into our shadowroot of the table.
+Therefore, we just use the child elements as wrappers that render nothing more than a slot. We then take what is slotted and insert it into our shadowroot of the table. This does mean that the content is no longer in the lightdom so that is the key compromise.
